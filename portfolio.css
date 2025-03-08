@@ -1,0 +1,829 @@
+/* portfolio  */
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Italiana&family=Jost:ital,wght@0,100..900;1,100..900&family=Lavishly+Yours&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Gilda+Display&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Italiana&family=Jost:ital,wght@0,100..900;1,100..900&family=Lavishly+Yours&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: #f2efea;
+}
+
+::selection {
+  color: black;
+  background: #d6cdc0;
+}
+body,
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul li {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.view-portfolio a {
+  transition: all ease 0.3s;
+  border: 1px solid #988463;
+  padding: 14px 31px 14px 31px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-family: Jost;
+  line-height: 20px;
+  color: #988463;
+}
+.view-portfolio a:hover {
+  background-color: #988463;
+  color: white;
+}
+/* back to top button */
+#button {
+  display: inline-block;
+  background-color: #988463;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  /* border-radius: 50%; */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f062";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 50px;
+  color: white;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #988463;
+}
+#button:active {
+  background-color: #988463;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+/* back to top button */
+
+/* .banner-main {
+  background-image: url(https://firstsight.design/palette/multi//wp-content/uploads/2021/02/1@1.5x.jpg);
+  height: 900px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-main p {
+  position: absolute;
+  transform: translateX(-50%, -50%);
+  top: 45%;
+  left: 20%;
+  color: white;
+  font-size: 80px;
+  line-height: 90px;
+  font-family: "Gilda Display", serif;
+} */
+
+/* Keyframes for animation */
+.img-1 {
+  /* height: auto; */
+  background-image: url(./imgaes/carousel-1.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-item .img img {
+  position: relative;
+}
+
+.banner-heading {
+}
+
+.banner-heading h1 {
+  color: white;
+  transform: translateX(-50%, -50%);
+  top: 45%;
+  position: absolute;
+  z-index: 999;
+  left: 20%;
+  color: white;
+  font-size: 80px;
+  line-height: 90px;
+  font-family: "Gilda Display", serif;
+}
+
+@keyframes loader {
+  0% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+ul li a {
+  list-style: none;
+}
+#menu-btn {
+  display: flex !important;
+  margin-right: 40px !important;
+  justify-content: end !important;
+  font-size: 20px;
+  align-items: center;
+}
+/* Navbar Styles */
+.navbar-main {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999 !important;
+  background-color: white;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.navbar-main:hover,
+.navbar-scroll {
+  background-color: white !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* .navbar-main:hover,
+.navbar-scroll-1 {
+  background-color: rgb(245, 239, 239) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+.navbar-main:hover,
+.navbar-scroll-2 {
+  background-color: #e1d3bd !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-main:hover,
+.navbar-scroll-3{
+  background-color: #d1c3ad !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+} */
+/* Carousel Styles */
+.carousel-item video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.img-1 {
+  width: 100%;
+  height: 100vh;
+  background: url("./imgaes/carousel-1.jpg") center/cover no-repeat;
+}
+
+.banner-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100vh;
+  position: relative;
+}
+
+.carousel-item video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+}
+
+.carousel-item img {
+  height: 100vh;
+  width: 100%;
+}
+
+.banner-main {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.banner-main.loaded {
+  visibility: visible;
+  opacity: 1;
+}
+
+.social-media a {
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+}
+.logo {
+  /* font-family: ; */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  /* margin-left: 40px; */
+  font-family: "Gilda Display";
+}
+.menu-bar {
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  transform: translateX(100%);
+  transition: all ease 0.3s;
+}
+.menu-close-main {
+  position: absolute;
+  right: 44px;
+  top: 18px;
+}
+#menu-close-btn {
+  font-size: 30px;
+  color: black;
+}
+.transform {
+  transform: translateX(0%) !important;
+}
+.border-main {
+  /* border: 1px solid white;
+  padding: 20px 15px; 
+  top: 10%;
+  position: absolute;
+  z-index: 999;
+  opacity: 0.2;
+  width: 100%; */
+}
+
+.social-links a {
+  color: white;
+  font-size: 20px;
+}
+.navigation a {
+  font-family: "Jost";
+  letter-spacing: 2px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 27px 0px;
+  transition: all ease 0.3s;
+}
+.navigation a:hover {
+  color: #988463 !important;
+}
+
+.about-content {
+  /* padding-left: 66px; */
+}
+
+.about-sub {
+  /* padding: 10px; */
+}
+
+.about .about-img img:first-child {
+  /* z-index: 1; */
+  max-width: 390px;
+  margin-right: -90px;
+}
+
+.about .about-img img:last-child {
+  align-self: center;
+  max-width: 330px;
+  margin-top: -70px;
+  z-index: -1;
+}
+
+.about-content h2 {
+  font-size: 80px;
+  letter-spacing: 0.005em;
+  line-height: 94px;
+  font-family: "Gilda Display";
+  font-weight: 400;
+  width: 70%;
+}
+
+.about-content p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  color: #000000;
+  font-family: "Jost";
+}
+
+.about-content a {
+  font-size: 20px;
+  color: #988463;
+  font-family: "Gilda Display";
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 30px;
+}
+
+.about-content a i {
+  margin: 0 5px;
+  font-weight: 0;
+
+  transition: all ease-in-out 0.5s;
+}
+
+.about-content a:hover i {
+  margin-left: 10px;
+}
+
+.shooting {
+  background-image: url(./imgaes/grid0img.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+  position: relative;
+}
+
+.shooting-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shooting-content h1 {
+  color: white;
+  font-size: 70px;
+  font-family: "Gilda Display";
+  white-space: nowrap;
+}
+
+.shooting-content a {
+  display: inline-block;
+  color: white;
+  padding: 12px 25px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  transition: all ease 0.3s;
+}
+
+.shooting-content a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* instagram  */
+.instagram {
+  background-color: #f2efea;
+}
+
+.instagram h2 {
+  font-size: 67px;
+  font-weight: 400;
+  line-height: 94px;
+  letter-spacing: 0.005px;
+  font-family: "Gilda Display";
+}
+
+.insta-img img {
+  /* height: 500px; */
+  width: 20%;
+}
+
+.instagram a {
+  color: #988463;
+  border: 1px solid #988463;
+  font-family: "jost";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 14px 35px;
+  display: inline-block;
+  /* margin-bottom: 0; */
+}
+
+.follow-me {
+  transition: all ease 0.2s;
+}
+
+.follow-me:hover {
+  background-color: #988463;
+  color: white;
+}
+
+/* footer  */
+.footer {
+  background-color: #f2efea;
+  height: auto;
+}
+
+.footer-content p {
+  font-family: "Gilda Display";
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+}
+
+.footer-social-links a {
+  color: black !important;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.footer-content a {
+  color: #212120;
+}
+
+.footer-links a {
+  font-family: "Jost";
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.footer-links a:hover {
+}
+
+.copyright span {
+  font-size: 12px;
+  font-family: "Jost";
+  /* color: #212120; */
+}
+
+.footer .list ul {
+  padding: 0px;
+}
+#number {
+  font-family: "Jost";
+
+  letter-spacing: 1px;
+}
+.list a:hover {
+  color: #988463 !important;
+}
+.footer .list ul li {
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-family: "Jost";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 16px;
+}
+
+.padding-left {
+  padding-right: 0px;
+}
+
+.copyright span {
+  font-size: 16px;
+}
+
+/* testimonials  */
+.testi-content h2 {
+  font-size: 80px;
+  letter-spacing: 0.005em;
+  line-height: 94px;
+  font-family: "Gilda Display";
+  font-weight: 400;
+}
+.testi-content p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  color: #000000;
+  font-family: "Jost";
+}
+.testi-content span {
+  font-size: 20px;
+  color: #988463;
+  font-family: "Gilda Display";
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 30px;
+}
+.testimonials img {
+  width: 370px;
+}
+.testi-content i {
+  color: #707070;
+  font-size: 30px;
+  /* margin-left: 20px; */
+}
+.testi-content ul {
+  /* margin-left:40%; */
+}
+.transition {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.discover-heading {
+  /* background-color: #f2efea; */
+}
+.discover-heading h1 {
+  font-family: "Gilda Display";
+  font-weight: 500;
+  font-size: 60px;
+}
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  /* background-color: #f2efea; */
+  position: relative;
+}
+
+.column {
+  flex: 10%;
+  max-width: 55%;
+  padding: 5px 8px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.column img:hover img {
+  background: linear-gradient(red, black);
+}
+.column p {
+  /* font-family: Jost; */
+  font-family: "Gilda Display";
+}
+.discover-grid {
+  background-color: #f2efea;
+}
+.img-2 {
+  position: relative;
+}
+.img-2 p {
+  position: absolute;
+  top: 50%;
+  color: white;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1200px) {
+  .column {
+    flex: 40%;
+    flex-wrap: wrap;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 50%;
+    max-width: 100%;
+  }
+}
+
+.body {
+  background-color: rgb(241, 241, 241);
+}
+.nav-pills .nav-link {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  font-family: "Gilda Display";
+  font-size: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.nav-pills .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #988463;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+.nav-pills .nav-link.active {
+  color: #988463 !important;
+}
+.nav-pills .nav-link.active::after {
+  width: 70%;
+}
+.nav-pills .nav-link:not(.active) {
+  color: #333 !important;
+}
+.nav-link:focus-visible {
+  box-shadow: none !important;
+}
+.tab-pane:focus-visible {
+  outline: none !important;
+}
+.tab-pane span {
+  font-family: "jost";
+  color: #988463;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.tab-pane h5,
+.tab-pane h6 {
+  font-family: "Gilda Display";
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: #000000;
+  transition: all 0.3s ease-in-out;
+}
+.tab-pane h6 {
+  font-size: 13px;
+}
+.port-col:hover.port-col h5,
+.port-col:hover.port-col h6 {
+  color: #988463 !important;
+}
+
+/* portfolio.html  */
+/* portfolio  */
+.body {
+  background-color: rgb(241, 241, 241);
+}
+
+.nav-pills .nav-link,
+.wedding-port .wedding-button {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  font-family: "Gilda Display";
+  font-size: 22px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.nav-pills .nav-link::after,
+.wedding-port .wedding-button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #988463;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.nav-pills .nav-link.active,
+.wedding-port .wedding-button.active {
+  color: #988463 !important;
+}
+
+.nav-pills .nav-link.active::after,
+.wedding-port .wedding-button.active::after {
+  width: 70%;
+}
+
+.nav-pills .nav-link:not(.active),
+.wedding-port .wedding-button:not(.active) {
+  color: #333 !important;
+}
+
+.nav-link:focus-visible {
+  box-shadow: none !important;
+}
+
+.tab-pane:focus-visible {
+  outline: none !important;
+}
+
+.tab-pane span,
+.wedding-port span {
+  font-family: "jost";
+  color: #988463;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.tab-pane h5,
+.tab-pane h6,
+.wedding-port h5,
+.wedding-port h6 {
+  font-family: "Gilda Display";
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: #000000;
+  transition: all 0.3s ease-in-out;
+}
+
+.tab-pane h6,
+.wedding-port h6 {
+  font-size: 13px;
+}
+
+.port-col:hover.port-col h5,
+.port-col:hover.port-col h6 {
+  color: #988463 !important;
+}
+
+/* .wedding-port .wedding-button::after {
+  bottom: -10px;
+}
+
+.wedding-port .wedding-button.active::after {
+  width: 90%;
+} */
+
+@media (max-width: 1199px) {
+  .nav-pills .nav-link {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .nav-pills .nav-link {
+    font-size: px;
+  }
+  .wedding-port .wedding-button {
+    font-size: 19px;
+  }
+}
+@media (max-width: 767px) {
+  .nav-pills .nav-link {
+    font-size: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .nav-pills .nav-link {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .nav-pills .nav-link {
+    font-size: 15px;
+  }
+  .nav-pills {
+    display: grid !important;
+    grid-template-columns: repeat(6, 10fr) !important;
+    /* gap: 5px; */
+    justify-content: center;
+  }
+  .nav-pills li:nth-child(n + 6) {
+    grid-column: span 6 !important;
+  }
+}
+@media (max-width: 375px) {
+  .nav-pills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    /* gap: 5px; */
+    justify-content: center;
+  }
+  .nav-item {
+    text-align: center;
+  }
+  .nav-pills li:nth-child(n + 5) {
+    grid-column: span 5;
+  }
+  .nav-link {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio-media.css">
+    <link rel="stylesheet" href="portfolio.css">
+
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- remix icon -->
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- bootstrap cdn -->
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- bootstrap icon -->
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollSmoother.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+    <!-- gsap -->
+
+    <!-- slick css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick css -->
+
+    <!-- jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jquery CDN -->
+
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- aos css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- animate css -->
+
+    <!-- Font Awesome Pro -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+
+
+</head>
+
+<body>
+    <!-- back to top button -->
+    <a id="button"></a>
+    <!-- back to top button -->
+
+    <!-- menu-bar -->
+    <section>
+        <div class="menu-bar">
+            <div class="menu-close-main">
+                <a id="menu-close-btn" href=""><i class="fa-thin fa-circle-xmark"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- menu-bar -->
+
+    <!-- Navbar (Persistent) -->
+    <div class="navbar-main">
+        <div class="container-fluid">
+            <div class="row py-4 d-flex justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-11 col-10 d-flex justify-content-center">
+                    <a class="logo mb-0 text-dark" href="">Arihant Studio</a>
+
+                </div>
+                <div class="col-lg-4 d-lg-block d-md-none d-none ">
+                    <ul class="d-flex justify-content-center gap-5 mb-0 ms-5 navigation">
+                        <li><a class="text-dark" href="./index.html">Home</a></li>
+                        <li><a class="text-dark" href="">About</a></li>
+                        <li><a class="text-dark" href="">Gallery</a></li>
+                        <li><a class="text-dark" href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-1 col-1">
+                    <ul class="d-lg-flex d-md-none d-none justify-content-end gap-3 mb-0 me-4 social-links">
+                        <li><a class="text-dark" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a class="text-dark" href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a class="text-dark" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    </ul>
+                    <div class="anchor d-lg-none">
+                        <a id="menu-btn" href=""><i class="mb-0 text-dark ri-menu-3-line"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="portfolio text-center  py-5">
+        <div class="container pt-5  ">
+            <div class="row pt-5 ">
+                <ul class="nav nav-pills mb-3 justify-content-center d-flex" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active bg-transparent text-dark" id="pills-home-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                            aria-controls="pills-home" aria-selected="true">All</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-transparent text-dark" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Toddler</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-transparent text-dark" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">Maternity</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-transparent text-dark" id="pills-travel-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-travel" type="button" role="tab" aria-controls="pills-travel"
+                            aria-selected="false">Couple</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-transparent text-dark" id="pills-wedding-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-wedding" type="button" role="tab" aria-controls="pills-wedding"
+                            aria-selected="false">Wedding</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-transparent text-dark" id="pills-pre-wedding-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-pre-wedding" type="button" role="tab"
+                            aria-controls="pills-pre-wedding" aria-selected="false">Pre-Wedding</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-transparent text-dark" id="pills-post-wedding-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-post-wedding" type="button" role="tab"
+                            aria-controls="pills-post-wedding" aria-selected="false">Post-Wedding</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-transparent text-dark" id="pills-post-wedding-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-post-wedding" type="button" role="tab"
+                            aria-controls="pills-post-wedding" aria-selected="false">Product</button>
+                    </li>
+                </ul>
+                <div class="tab-content pt-5" id="pills-tabContent">
+
+                    <div class="tab-pane fade pt-3 show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_2222@4x.jpg"
+                                    alt="" class="img-fluid">
+                                <span class="py-3 d-inline-block">Portrait travel</span>
+                                <h5 class="">Emotional Adventures at Chateau Mormont</h5>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_1.jpg"
+                                    alt="" class="img-fluid">
+                                <span class="py-3 d-inline-block">Wedding</span>
+                                <h5 class="">Kayleilh + Nick Love Story at Lago di Como</h5>
+                                <h6 class="mt-4">Brooklyn, NY</h6>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img class="img-fluid"
+                                    src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_3.jpg"
+                                    alt="">
+                                <span class="py-3 d-inline-block">travel</span>
+                                <h5 class="">Sunny Days in Spain: Jessica and Alexander Story</h5>
+                                <h6 class="mt-4">Barcelona</h6>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img class="img-fluid"
+                                    src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_4.jpg"
+                                    alt="">
+                                <span class="py-3 d-inline-block">headshot</span>
+                                <h5 class="">Elizabeth</h5>
+                                <h6 class="mt-4">Paris</h6>
+
+                            </div>
+
+                        </div>
+                        <div class="row py-5">
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_5.jpg"
+                                    alt="" class="img-fluid">
+                                <span class="py-3 d-inline-block">maternity</span>
+                                <h5 class="">Susana</h5>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_6.jpg"
+                                    alt="" class="img-fluid">
+                                <span class="py-3 d-inline-block">travel</span>
+                                <h5 class="">Beautiful Lili</h5>
+                                <h6 class="mt-4">Los Angeles,CA</h6>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img class="img-fluid"
+                                    src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_7.jpg"
+                                    alt="">
+                                <span class="py-3 d-inline-block">wedding</span>
+                                <h5 class="">Anna Maria + Brandon: Love Story in Paris</h5>
+                                <h6 class="mt-4">Lago Di Como</h6>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img class="img-fluid"
+                                    src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_8.jpg"
+                                    alt="">
+                                <span class="py-3 d-inline-block">headshot</span>
+                                <h5 class="">Sue’s Design Buro</h5>
+                                <h6 class="mt-4">Berlin</h6>
+
+                            </div>
+                        </div>
+                        <a class="text-center mt-4 load-more" href="javascript:void(0)">Load More</a>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel " aria-labelledby="pills-profile-tab"
+                        tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img class="img-fluid"
+                                    src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_4.jpg"
+                                    alt="">
+                                <span class="py-3 d-inline-block">headshot</span>
+                                <h5 class="">Elizabeth</h5>
+                                <h6 class="mt-4">Paris</h6>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img class="img-fluid"
+                                    src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_8.jpg"
+                                    alt="">
+                                <span class="py-3 d-inline-block">headshot</span>
+                                <h5 class="">Sue’s Design Buro</h5>
+                                <h6 class="mt-4">Berlin</h6>
+
+                            </div>
+                        </div>
+                        <a class="text-center mt-4 load-more" href="javascript:void(0)">Load More</a>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img class="img-fluid"
+                                    src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_5.jpg"
+                                    alt="">
+                                <span class="py-3 d-inline-block">maternity</span>
+                                <h5 class="">Susana</h5>
+                            </div>
+                        </div>
+                        <a class="text-center mt-4 load-more" href="javascript:void(0)">Load More</a>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-travel" role="tabpanel" aria-labelledby="pills-travel-tab"
+                        tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_2222@4x.jpg"
+                                    alt="" class="img-fluid">
+                                <span class="py-3 d-inline-block">Portrait travel</span>
+                                <h5 class="">Emotional Adventures at Chateau Mormont</h5>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_3.jpg"
+                                    alt="" class="img-fluid">
+                                <span class="py-3 d-inline-block">travel</span>
+                                <h5 class="">Sunny Days in Spain: Jessica and Alexander Story</h5>
+                                <h6 class="mt-4">Barcelona</h6>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img class="img-fluid"
+                                    src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_6.jpg"
+                                    alt="">
+                                <span class="py-3 d-inline-block">travel</span>
+                                <h5 class="">Beautiful Lili</h5>
+                                <h6 class="mt-4">Los Angeles,CA</h6>
+                            </div>
+                        </div>
+                        <a class="text-center mt-4 load-more" href="javascript:void(0)">Load More</a>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-wedding" role="tabpanel" aria-labelledby="pills-wedding-tab"
+                        tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img class="img-fluid"
+                                    src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_1.jpg"
+                                    alt="">
+                                <span class="py-3 d-inline-block">Wedding</span>
+                                <h5 class="">Kayleilh + Nick Love Story at Lago di Como</h5>
+                                <h6 class="mt-4">Brooklyn, NY</h6>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img class="img-fluid"
+                                    src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_7.jpg"
+                                    alt="">
+                                <span class="py-3 d-inline-block">wedding</span>
+                                <h5 class="">Anna Maria + Brandon: Love Story in Paris</h5>
+                                <h6 class="mt-4">Lago Di Como</h6>
+                            </div>
+                        </div>
+                        <a class="text-center mt-4 load-more" href="javascript:void(0)">Load More</a>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-pre-wedding" role="tabpanel" aria-labelledby="pills-travel-tab"
+                        tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_2222@4x.jpg"
+                                    alt="" class="img-fluid">
+                                <span class="py-3 d-inline-block">Portrait travel</span>
+                                <h5 class="">Emotional Adventures at Chateau Mormont</h5>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_3.jpg"
+                                    alt="" class="img-fluid">
+                                <span class="py-3 d-inline-block">travel</span>
+                                <h5 class="">Sunny Days in Spain: Jessica and Alexander Story</h5>
+                                <h6 class="mt-4">Barcelona</h6>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img class="img-fluid"
+                                    src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_6.jpg"
+                                    alt="">
+                                <span class="py-3 d-inline-block">travel</span>
+                                <h5 class="">Beautiful Lili</h5>
+                                <h6 class="mt-4">Los Angeles,CA</h6>
+                            </div>
+                        </div>
+                        <a class="text-center mt-4 load-more" href="javascript:void(0)">Load More</a>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-post-wedding" role="tabpanel"
+                        aria-labelledby="pills-travel-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_2222@4x.jpg"
+                                    alt="" class="img-fluid">
+                                <span class="py-3 d-inline-block">Portrait travel</span>
+                                <h5 class="">Emotional Adventures at Chateau Mormont</h5>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_3.jpg"
+                                    alt="" class="img-fluid">
+                                <span class="py-3 d-inline-block">travel</span>
+                                <h5 class="">Sunny Days in Spain: Jessica and Alexander Story</h5>
+                                <h6 class="mt-4">Barcelona</h6>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-12 port-col">
+                                <img class="img-fluid"
+                                    src="https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_6.jpg"
+                                    alt="">
+                                <span class="py-3 d-inline-block">travel</span>
+                                <h5 class="">Beautiful Lili</h5>
+                                <h6 class="mt-4">Los Angeles,CA</h6>
+                            </div>
+                        </div>
+                        <a class="text-center mt-4 load-more" href="javascript:void(0)">Load More</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const section = urlParams.get('section');
+
+            if (section) {
+                // Remove active class from all tabs
+                document.querySelectorAll(".nav-link").forEach(tab => tab.classList.remove("active"));
+                document.querySelectorAll(".tab-pane").forEach(tabContent => tabContent.classList.remove("show", "active"));
+
+                // Activate the correct tab
+                const activeTab = document.querySelector(`[data-bs-target="#pills-${section}"]`);
+                const activeContent = document.querySelector(`#pills-${section}`);
+
+                if (activeTab && activeContent) {
+                    activeTab.classList.add("active");
+                    activeContent.classList.add("show", "active");
+                }
+            }
+        });
+    </script>
+    <!-- portfolio script -->
+
+    <section class="footer">
+        <div class="container ">
+            <div class="row p-lg-5 p-md-5 p-2 ">
+                <div data-aos="fade-up" class="col-lg-4 col-md-4 col-12 d-flex justify-content-center mt-5">
+                    <div class="footer-content mt-lg-0 mt-md-5 mt-5 text-center">
+                        <p class="">Telephone</p>
+                        <a type="tel" id="number" class=" d-inline-block" href="tel:9081466622">+91 90814 66622</a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="col-lg-4 col-md-4 col-12 d-flex justify-content-center mt-5">
+                    <div class="footer-content mt-lg-0 mt-md-5 mt-5">
+                        <p class="text-center">Social</p>
+                        <ul class="d-flex mb-0 p-0 gap-3 text-center footer-social-links">
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div data-aos="fade-up" class="col-lg-4 col-md-4 col-12 d-flex justify-content-center mt-5">
+                    <div class="footer-content mt-lg-0 mt-md-5 mt-5">
+                        <p class="text-center">Email</p>
+                        <a href="mailto:dhrumilshah71011@gmail.com">name@gmail.com</a>
+                    </div>
+
+                </div>
+
+                <div class="container d-flex justify-content-center py-5">
+                    <div class="row py-3 mt-5 ">
+
+                        <div class="list d-flex ">
+                            <ul class="d-md-flex col-lg-6 col-md-6 col-6  ">
+                                <li><a class="text-dark" href="">portfolio</a></li>
+                                <li><a class="text-dark" href="">about</a></li>
+
+                            </ul>
+                            <ul class="d-md-flex col-lg-6 col-md-6 col-6">
+                                <li class="padding-left"><a class="text-dark" href="">Gallery</a></li>
+                                <li><a class="text-dark" href="">Contact</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="copyright text-center p-2">
+                    <span>© 2025, Arihant Studio. All rights reserved.</span>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <!-- slick carousel js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- slick carousel js -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- slick carousel js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- slick carousel js -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos js -->
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                dots: false,
+                lazyLoad: true,
+                responsiveClass: true
+            });
+        });
+
+        $('.mynav-next').click(function () {
+            $(".owl-carousel").trigger('next.owl.carousel');
+        })
+        // Go to the previous item
+        $('.mynav-prev').click(function () {
+            $(".owl-carousel").trigger('prev.owl.carousel');
+        })
+    </script>
+
+    <!-- aos script -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- aos script -->
+    <script src="portfolio.js"></script>
+
+    <!-- portfolio  -->
+    <!-- Include GSAP Library -->
+    <script src="./gsap/gsap.min.js"></script>
+
+    <!-- navbar script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener("scroll", function () {
+                let navbar = document.querySelector(".navbar-main");
+                if (window.scrollY > 50) {
+                    navbar.classList.add("navbar-scroll");
+                } else {
+                    navbar.classList.remove("navbar-scroll");
+
+                }
+                if (window.scrollY > 650) {
+                    navbar.classList.add("navbar-scroll-1");
+
+                } else {
+                    navbar.classList.remove("navbar-scroll-1");
+
+                }
+                if (window.scrollY > 1330) {
+                    navbar.classList.add("navbar-scroll-2");
+
+                } else {
+                    navbar.classList.remove("navbar-scroll-2");
+
+                }
+                if (window.scrollY > 4030) {
+                    navbar.classList.add("navbar-scroll-3");
+
+                } else {
+                    navbar.classList.remove("navbar-scroll-3");
+
+                }
+
+
+            });
+        });
+    </script>
+    <!-- navbar script -->
+
+    <!-- back to top -->
+    <script>// back to top button
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+        // back to top button
+
+
+    </script>
+    <!-- back to top -->
+
+
+
+</body>
+
+</html>

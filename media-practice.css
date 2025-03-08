@@ -1,0 +1,210 @@
+@media (max-width: 1399.98px) {
+  .about-img img:first-child {
+    max-width: 360px !important;
+  }
+  .about-img img:last-child {
+    max-width: 300px !important;
+    margin-top: 30px !important;
+  }
+  .menu-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .banner-heading h1 {
+    color: white;
+    transform: translateX(-50%, -50%);
+    top: 45%;
+    position: absolute;
+    z-index: 999;
+    left: 20%;
+    color: white;
+    font-size: 50px !important;
+    line-height: 90px;
+    font-family: "Gilda Display", serif;
+  }
+  .menu-bar {
+    display: none;
+  }
+  .about-img img:first-child {
+    max-width: 330px !important;
+  }
+  .about-img img:last-child {
+    max-width: 250px !important;
+  }
+  .about-content h2 {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .menu-bar {
+    display: block;
+  }
+  .about-sub {
+    margin-left: 30px !important;
+  }
+  .about-img img:first-child {
+    max-width: 420px !important;
+  }
+  .about-img img:last-child {
+    max-width: 300px !important;
+  }
+  .about-content {
+    margin-left: 30px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .img-1 {
+    background-image: url(./imgaes/carousel-1.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .insta-img img {
+    width: 50% !important;
+  }
+  .about-sub {
+    margin-left: 0px !important;
+  }
+  .about-img img:first-child {
+    max-width: 350px !important;
+  }
+  .about-img img:last-child {
+    max-width: 250px !important;
+  }
+  .about-content h2 {
+    width: 110% !important;
+  }
+  .footer .list ul li {
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-family: "Jost";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 36px !important;
+    text-align: center;
+  }
+
+  .shooting {
+    background-image: url(./imgaes/carousel-1.jpg) !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    height: 500px !important;
+    width: 100%;
+    position: relative;
+    background-position: center !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-sub {
+    margin-left: 0px !important;
+  }
+  .about-content {
+    margin-left: 0px !important;
+  }
+  .carousel-item video {
+    width: 100%; /* Make video width 100% of the parent container */
+    height: 600px !important; /* Make video height 100% of the viewport height */
+    object-fit: cover; /* Make sure the video covers the entire area without distortion */
+  }
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    height: 600px !important;
+  }
+  .insta-img img {
+    /* height: 269.797px; */
+    /* width: 100% !important; */
+    /* height: 400px; */
+    /* padding: 0px; */
+  }
+  .about-content h2 {
+    width: 80% !important;
+  }
+  .about-img img:first-child {
+    max-width: 350px !important;
+  }
+  .about-img img:last-child {
+    max-width: 250px !important;
+  }
+  .about-content h2 {
+    width: 100% !important;
+    /* font-size: 25px !important; */
+  }
+  .about-sub {
+    margin-left: 30px !important;
+  }
+  .about-content {
+    margin-left: 30px !important;
+  }
+  .img-1 {
+    height: 600px !important;
+    object-fit: cover !important;
+  }
+  .copyright span {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 476px) {
+  .about-sub {
+    /* margin-left: 130px !important; */
+  }
+  .about-content {
+    margin-left: 0px !important;
+  } /* width: 100% !important; */
+  .insta-img img {
+    /* height: 269.797px; */
+    width: 100% !important;
+    /* height: 400px; */
+    /* padding: 0px; */
+  }
+  .about-sub {
+    padding: 0px 0px 0px 5px !important;
+  }
+  .about-sub {
+    margin-left: 0px !important;
+  }
+  .about-img img:first-child {
+    max-width: 250px !important;
+    /* margin-left: 10px !important; */
+  }
+  .about-content {
+    padding: 0px 0px 0px 12px;
+  }
+  .about-img img:last-child {
+    max-width: 200px !important;
+  }
+  .about-content h2 {
+    width: 100% !important;
+    font-size: 36px !important;
+  }
+  .instagram h2 {
+    font-size: 46px !important;
+  }
+  /* .img-1{
+      height: 600px !important;
+      object-fit: cover !important;
+    } */
+  .logo {
+    margin-left: 0px !important;
+  }
+  .discover-heading h1 {
+    font-size: 35px !important;
+  }
+}
+
+@media (max-width: 376px) {
+  .about-sub {
+    margin-left: -5px !important;
+  }
+}

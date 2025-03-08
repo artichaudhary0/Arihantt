@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollSmoother.min.js"></script>
+
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- remix icon -->
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- bootstrap cdn -->
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- bootstrap icon -->
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollSmoother.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+
+    <!-- gsap -->
+
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- slick css -->
+
+    <!-- jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jquery CDN -->
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- aos css-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- animate css -->
+
+    <!-- Font Awesome Pro -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="text" class="loading">
+    <div class="loader">
+        <div class="body-loader">
+            <video autoplay muted>
+                <source src="./imgaes/Final Comp-1.mp4">
+            </video>
+        </div>
+    </div>
+    <!-- loader  -->
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $(".loader, .body-loader").fadeOut(500);
+                $("body").removeClass("loading");
+            }, 6000);
+        });
+    </script>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <!-- Your website content here -->
+
+            <!-- back to top button -->
+            <a id="button"></a>
+            <!-- back to top button -->
+
+            <!-- banner -->
+            <!-- <section>
+        <div class="banner-main">
+            <div class="container-fluid">
+                <div class="row py-3 d-flex align-items-center">
+                    <div class="col-4">
+
+                    </div>
+                    <div class="col-4 d-flex justify-content-center">
+                        <a class="logo" href="">Arihant Studio</a>
+                    </div>
+                    <div class="col-4">
+                        <ul class="d-flex justify-content-end gap-3 me-4 social-links">
+                            <li><a href=""><i class="ri-instagram-line"></i></a></li>
+                            <li><a href=""><i class="ri-whatsapp-line"></i></a></li>
+                            <li><a href=""><i class="ri-facebook-fill"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="border-main"></div>
+                        <ul class="d-flex justify-content-center gap-4 navbar-main">
+                            <li><a href="">PORTFOLIO</a></li>
+                            <li><a href="">TIPS</a></li>
+                            <li><a href="">ABOUT</a></li>
+                            <li><a href="">PRICING</a></li>
+                            <li><a href="">WORKSHOPS</a></li>
+                            <li><a href="">SHOP</a></li>
+                            <li><a href="">CONTACT</a></li>
+                            <li><a href="">BLOG</a></li>
+                            <li><a href="">PROOFING GALLERY</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p>I don’t take a photograph. <br> I ask quietly to borrow it.</p>
+        </div>
+    </section> -->
+            <!-- banner -->
+
+            <!-- menu-bar -->
+            <section>
+                <div class="menu-bar">
+                    <div class="menu-close-main">
+                        <a id="menu-close-btn" href=""><i class="fa-thin fa-circle-xmark"></i></a>
+                    </div>
+                    <ul class="menu-bar-navigation mb-0 ">
+                        <li class="mt-4"><a href="">Portfolio </a></li>
+                        <li class="mt-4"><a href="">About</a></li>
+                        <li class="mt-4"><a href="scscsd.html">Gallery</a></li>
+                        <li class="mt-4"><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- menu-bar -->
+
+            <!-- Navbar (Persistent) -->
+            <div class="navbar-main">
+                <div class="container-fluid">
+                    <div class="row py-4 d-flex justify-content-center align-items-center">
+                        <div class="col-lg-3 col-md-11 col-10 d-flex justify-content-center">
+                            <a class="logo mb-0 text-dark  text-center" href="index.html">Arihant Studio</a>
+
+                        </div>
+                        <div class="col-lg-6 d-lg-block d-md-none d-none ">
+                            <ul class="d-flex justify-content-center gap-5 mb-0 me-5 navigation">
+                                <li><a class="text-dark" href="./index.html">Home</a></li>
+                                <li><a class="text-dark" href="./about.html">About</a></li>
+                                <li><a class="text-dark" href="./portfolio.html">Portfolio</a></li>
+                                <li><a class="text-dark" href="scscsd.html">Gallery</a></li>
+                                <li><a class="text-dark" href="">Contact</a></li>
+                                <!-- <li><a class="" href=""><i id="list-icon" class="fa-solid fa-list-timeline"></i></a></li> -->
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-1 col-1">
+                            <ul class="d-lg-flex d-md-none d-none justify-content-end gap-3 mb-0 me-4 social-links">
+                                <li><a class="text-dark" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a class="text-dark" href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                                <li><a class="text-dark" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            </ul>
+                            <div class="anchor d-lg-none">
+                                <a id="menu-btn" href=""><i class="mb-0 text-dark ri-menu-3-line"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel -->
+            <div id="video-carousel-example2" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                data-bs-interval="3000">
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#video-carousel-example2" data-bs-slide-to="0" class="active"
+                        style="width: 130px;"></button>
+                    <button type="button" data-bs-target="#video-carousel-example2" data-bs-slide-to="1"
+                        style="width: 130px;"></button>
+                    <button type="button" data-bs-target="#video-carousel-example2" data-bs-slide-to="2"
+                        style="width: 130px;"></button>
+                    <button type="button" data-bs-target="#video-carousel-example2" data-bs-slide-to="3"
+                        style="width: 130px;"></button>
+                    <button type="button" data-bs-target="#video-carousel-example2" data-bs-slide-to="4"
+                        style="width: 130px;"></button>
+                </div>
+
+                <!-- Slides -->
+                <div oncontextmenu="return false;" class="carousel-inner">
+                    <!-- Slide 1 (Image) -->
+                    <div class="carousel-item active">
+                        <div class="img-1">
+                            <!-- <div class="border-img"></div> -->
+
+                            <div class="img-1-content mt-4">
+                                <!-- <span>We Craft Emotional Photos</span>
+                     <h1 class="">Capture Moments</h1> -->
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Slide 2 (Video) -->
+                    <div class="carousel-item">
+                        <video class="d-block w-100 video-slide" autoplay muted>
+                            <source src="./videos/Aagam & Aangi - Wedding teaser.mp4" type="video/mp4" />
+                        </video>
+                        <div class="sound-toggle">
+                            <i class="fa-solid fa-volume-slash"></i> <!-- Sound icon -->
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 (Video) -->
+                    <div class="carousel-item">
+                        <video class="d-block w-100 video-slide" autoplay muted>
+                            <source src="./videos/Divya Weds karina - Teaser.mp4" type="video/mp4" />
+                        </video>
+                        <div class="sound-toggle">
+                            <i class="fa-solid fa-volume-slash"></i> <!-- Sound icon -->
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-item">
+                        <video class="d-block w-100 video-slide" autoplay muted>
+                            <source src="./videos/WEDDING HIGHLIGHT- Parth & Nishita wn.mp4" type="video/mp4" />
+                        </video>
+                        <div class="sound-toggle">
+                            <i class="fa-solid fa-volume-slash"></i> <!-- Sound icon -->
+                        </div>
+                    </div>
+
+                    <div class="carousel-item ">
+                        <div class="img-2-2">
+                            <div class="img-2-2-content mt-4">
+                                <!-- <span>We Craft Emotional Photos</span> -->
+                                <!-- <h1 class="">Capture Moments</h1> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- JavaScript to Control the Carousel -->
+            <script>
+
+                document.addEventListener("DOMContentLoaded", function () {
+                    var carouselElement = document.getElementById("video-carousel-example2");
+                    var carousel = new bootstrap.Carousel(carouselElement, {
+                        interval: false // Disable auto sliding globally
+                    });
+
+                    var videos = document.querySelectorAll(".video-slide");
+                    var soundIcons = document.querySelectorAll(".sound-toggle i");
+
+                    function handleSlideChange(event) {
+                        var activeItem = event.relatedTarget;
+                        var activeVideo = activeItem.querySelector("video");
+
+                        // Mute and reset all videos when switching slides
+                        videos.forEach(video => {
+                            video.muted = true;
+                            video.pause();
+                            video.currentTime = 0;
+                        });
+
+                        soundIcons.forEach(icon => {
+                            icon.classList.remove("fa-volume");
+                            icon.classList.add("fa-volume-slash");
+                        });
+
+                        if (activeVideo) {
+                            carousel.pause(); // Stop auto-slide
+                            activeVideo.play();
+
+                            activeVideo.onended = function () {
+                                carousel.next(); // Move to next slide after video finishes
+                            };
+                        } else {
+                            setTimeout(() => {
+                                carousel.next();
+                            }, 3000);
+                        }
+                    }
+
+                    // Toggle mute/unmute when clicking the video itself
+                    videos.forEach(video => {
+                        video.addEventListener("click", function () {
+                            var soundIcon = video.closest(".carousel-item").querySelector(".sound-toggle i");
+
+                            if (video.muted) {
+                                video.muted = false;
+                                soundIcon.classList.remove("fa-volume-slash");
+                                soundIcon.classList.add("fa-volume");
+                            } else {
+                                video.muted = true;
+                                soundIcon.classList.remove("fa-volume");
+                                soundIcon.classList.add("fa-volume-slash");
+                            }
+                        });
+                    });
+
+                    // Toggle mute/unmute when clicking the sound button
+                    document.querySelectorAll(".sound-toggle").forEach((icon) => {
+                        icon.addEventListener("click", function () {
+                            var video = icon.closest(".carousel-item").querySelector("video");
+
+                            if (video) {
+                                if (video.muted) {
+                                    video.muted = false;
+                                    icon.querySelector("i").classList.remove("fa-volume-slash");
+                                    icon.querySelector("i").classList.add("fa-volume-up");
+                                } else {
+                                    video.muted = true;
+                                    icon.querySelector("i").classList.remove("fa-volume-up");
+                                    icon.querySelector("i").classList.add("fa-volume-slash");
+                                }
+                            }
+                        });
+                    });
+
+                    // Ensure manual slide navigation follows the correct logic
+                    carouselElement.addEventListener("slide.bs.carousel", function (event) {
+                        var nextItem = event.relatedTarget;
+                        var nextVideo = nextItem.querySelector("video");
+
+                        if (nextVideo) {
+                            carousel.pause();
+                        }
+                    });
+
+                    // Listen for when a new slide is fully displayed
+                    carouselElement.addEventListener("slid.bs.carousel", handleSlideChange);
+
+                    // Start auto-slide for the first image after 3 seconds
+                    setTimeout(() => {
+                        carousel.next();
+                    }, 8000);
+                });
+
+            </script>
+
+            <!-- about  -->
+            <section class="about py-lg-3 py-md-5">
+                <div class="container">
+                    <div class="row py-5">
+                        <div class="col-lg-6 col-md-6 col-12 ">
+                            <div class="about-sub">
+                                <div oncontextmenu="return false;" class="about-img d-flex ">
+                                    <img src="https://firstsight.design/palette/multi//wp-content/uploads/2021/02/2@1.5x.jpg"
+                                        alt="" class="img-fluid">
+                                    <img oncontextmenu="return false;"
+                                        src="https://firstsight.design/palette/multi//wp-content/uploads/2021/02/3@1.5x.jpg"
+                                        alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-12 align-items-center">
+                            <div class="about-content ms-lg-5 ms-md-0 ms-0 mt-3">
+                                <h2 data-aos="fade-up">Nice to Meet You</h2>
+                                <p>Photography was always my passion and my dream job. It’s even difficult for me to
+                                    call it a
+                                    job, as I consider my profession as a hobby of my life. Meeting new people, catching
+                                    their
+                                    mood, being part of the happiest momentы of their life — isn’t it a dream?</p>
+                                <div class="d-flex align-items-center">
+                                    <a class="d-flex align-items-center" href="">About me
+                                        <i class=" align-items-center ms-2 fa-sharp-duotone fa-thin fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- about -->
+
+            <!-- grid -->
+            <div class="discover-grid pb-5">
+                <div class="container">
+                    <div class="discover-heading py-5">
+                        <h1 class="text-center mb-3">Crafted for Perfection </h1>
+                        <div class="grid-container  ">
+
+                            <div class="column mt-3">
+                                <div data-aos="fade-up" class="img-2 wedding">
+                                    <a href="portfolio.html?section=wedding"> <img class=""
+                                            src="./imgaes/wedding-main.jpg"></a>
+                                    <a href="portfolio.html?section=wedding">
+                                        <p class="text-center fs-1 mt-3">Wedding</p>
+                                    </a>
+                                </div>
+
+                                <div class="img-2 mt-3 " data-aos="fade-up">
+                                    <a href="portfolio.html?section=pre-wedding"> <img
+                                            src="./imgaes/pre-weddingcrop.jpg"></a>
+                                    <a href="portfolio.html?section=pre-wedding">
+                                        <p class="text-center fs-1 mt-3">Pre Wedding</p>
+                                    </a>
+                                </div>
+
+                                <div class="img-2 mt-3" data-aos="fade-up">
+                                    <a href="portfolio.html?section=post-wedding"> <img
+                                            src="./imgaes/post-wedding-2-crop.jpg"></a>
+                                    <a href="portfolio.html?section=post-wedding">
+                                        <p class="text-center fs-1 mt-3">Post Wedding</p>
+                                    </a>
+                                </div>
+
+                            </div>
+
+
+                            <div class="column mt-3" data-aos="fade-right">
+                                <div class="img-2 ">
+                                    <a href="portfolio.html?section=profile"> <img src="./imgaes/toddler-2.jpg"></a>
+                                    <a href="portfolio.html?section=profile">
+                                        <p class="text-center fs-1 mt-3">Toddler</p>
+                                    </a>
+                                </div>
+
+
+                                <div class="img-2 mt-3" data-aos="fade-left">
+                                    <a href="portfolio.html?section=travel"><img src="./imgaes/couple-1.jpg"></a>
+                                    <a href="portfolio.html?section=travel">
+                                        <p class="text-center fs-1 mt-3">Couple</p>
+                                    </a>
+                                </div>
+
+
+                                <div class="img-2 mt-3" data-aos="fade-right">
+                                    <a href="portfolio.html?section=contact"> <img
+                                            src="./imgaes/maternity-couple.JPG"></a>
+                                    <a href="portfolio.html?section=contact">
+                                        <p class="text-center fs-1 mt-3">Maternity</p>
+                                    </a>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="view-portfolio text-center py-5">
+                        <a href="portfolio.html" class="text-center">View Portfolio</a>
+                    </div>
+                </div>
+            </div>
+            <!-- grid -->
+
+            <!-- grid script -->
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    document.querySelector(".wedding-link").addEventListener("click", function (event) {
+                        event.preventDefault(); // Prevent instant navigation
+
+                        // Select elements to animate
+                        let elements = document.querySelectorAll("img, .some-class, .another-class");
+
+                        // Preload images of the next page
+                        let nextPageImages = ["./images/wedding-1.jpg", "./images/wedding-2.jpg"];
+                        let loadedImages = 0;
+
+                        nextPageImages.forEach(src => {
+                            let img = new Image();
+                            img.src = src;
+                            img.onload = function () {
+                                loadedImages++;
+                                if (loadedImages === nextPageImages.length) {
+                                    // Once all images are preloaded, animate and redirect
+                                    gsap.to(elements, {
+                                        opacity: 0,
+                                        y: -50,
+                                        duration: 0.6,
+                                        stagger: 0.1,
+                                        onComplete: function () {
+                                            window.location.href = "portfolio.html#wedding";
+                                        }
+                                    });
+                                }
+                            };
+                        });
+                    });
+                });
+            </script>
+            <!-- grid script -->
+
+            <!-- testimonials  -->
+            <!-- <section class="testimonials py-5 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 col-12 text-lg-start text-md-center text-center">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
+                                    <img oncontextmenu="return false;" id="testimonial-img"
+                                        src="./imgaes/Testimonail-1-1.jpg" alt="Client Testimonial 1"
+                                        class="img-fluid transition">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-7 col-md-6 col-12 d-flex align-items-center justify-content-center">
+                            <div class="testi-content text-center">
+                                <h2 class="fs-1">Echoes of Excellence</h2>
+                                <p id="testimonial-text" class="transition">The work done by Arihant Studio on my
+                                    wedding is
+                                    exceptional. All the people are very friendly and it seemed like they were more
+                                    interested
+                                    than us to get good photos 😄 The main thing I liked about you all is speed - we
+                                    would get
+                                    high quality reels and photos same day/ next day of the event which is truly
+                                    appreciated ✨🙌
+                                </p>
+                                <span class="d-block transition" id="testimonial-name">Divy & Karina</span>
+                                <ul class="nav nav-pills mb-3 text-center d-flex justify-content-center" id="pills-tab"
+                                    role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link mt-3" id="prev-testimonial" type="button">
+                                            <i class="fa-sharp-duotone fa-thin fa-arrow-left"></i>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link mt-3" id="next-testimonial" type="button">
+                                            <i class="fa-sharp-duotone fa-thin fa-arrow-right"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- testimonials -->
+
+            <!-- testimonials  -->
+            <!-- <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const testimonials = [
+                        {
+                            img: "./imgaes/Testimonail-1-1.jpg",
+                            text: "“The work done by Arihant Studio on my wedding is exceptional. All the people are very friendly and it seemed like they were more interested than us to get good photos 😄 The main thing I liked about you all is speed - we would get high quality reels and photos same day/ next day of the event which is truly appreciated ✨🙌”",
+                            name: "Divy & Karina"
+                        },
+                        {
+                            img: "./imgaes/sparsh-vama-testimonials.jpeg",
+                            text: "“Hyy Tirth Just wanted to thank you for the efforts u had taken!Really loved the outcomeIt was our first time and u made us feel so comfortable in front of the camera Had a great time filming itAnd everyone has appreciated your work as well they all loved it Thank you so much once again💓”",
+                            name: "Sparsh & Vama"
+                        },
+                        {
+                            img: "./imgaes/Dhruv-Testimonails-1.jpg",
+                            text: "“A huge thank you to Tirth Bhai and the entire team for capturing the Dhaja moments so beautifully!Your dedication, creativity, and attention to detail made every shot truly special.The outcome is beyond amazing. Grateful for your hard work and talent! 📸✨”",
+                            name: "Dhruv Puj"
+                        },
+                        // {
+                        //     img: "./imgaes/Dhruv-testimonials-1.jpg",
+                        //     text: "“A huge thank you to Tirth Bhai and the entire team for capturing the Dhaja moments so beautifully!Your dedication, creativity, and attention to detail made every shot truly special.The outcome is beyond amazing. Grateful for your hard work and talent! 📸✨”",
+                        //     name: "Sophia & Liam"
+                        // },
+                        // {
+                        //     img: "https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_2222@4x.jpg",
+                        //     text: "“Kaya Mason is just an awesome photographer and great person. Even if it’s your first photo session, don’t worry, Kaya will calm you down, give a lot of helpful tips and suggestions. She is so calm and attentive! My entire family was impressed by her and the photographs she took.”",
+                        //     name: "Sophia & Liam"
+                        // },
+                    ];
+
+                    let currentIndex = 0;
+                    const imgElement = document.getElementById("testimonial-img");
+                    const textElement = document.getElementById("testimonial-text");
+                    const nameElement = document.getElementById("testimonial-name");
+
+                    function updateTestimonial(index) {
+                        // Fade out
+                        imgElement.classList.add("fade-out");
+                        textElement.classList.add("fade-out");
+                        nameElement.classList.add("fade-out");
+
+                        setTimeout(() => {
+                            imgElement.src = testimonials[index].img;
+                            textElement.innerHTML = testimonials[index].text;
+                            nameElement.innerHTML = testimonials[index].name;
+
+                            // Fade in
+                            imgElement.classList.remove("fade-out");
+                            textElement.classList.remove("fade-out");
+                            nameElement.classList.remove("fade-out");
+                        }, 500); // Matches the CSS transition duration
+                    }
+
+                    document.getElementById("prev-testimonial").addEventListener("click", function () {
+                        currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+                        updateTestimonial(currentIndex);
+                    });
+
+                    document.getElementById("next-testimonial").addEventListener("click", function () {
+                        currentIndex = (currentIndex + 1) % testimonials.length;
+                        updateTestimonial(currentIndex);
+                    });
+                });
+            </script> -->
+            <!-- testimonials -->
+
+            <!-- <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const testiContainer = document.querySelector(".testi-content");
+                    const textElement = document.getElementById("testimonial-text");
+
+                    function adjustHeight() {
+                        let maxHeight = 0;
+                        document.querySelectorAll("#testimonial-text").forEach(text => {
+                            if (text.scrollHeight > maxHeight) {
+                                maxHeight = text.scrollHeight;
+                            }
+                        });
+                        testiContainer.style.minHeight = maxHeight + "px";
+                    }
+
+                    adjustHeight();
+                    window.addEventListener("resize", adjustHeight);
+                });
+
+            </script> -->
+
+
+            <!-- testimonials new -->
+            <section class="testimonials py-5 ">
+                <div class="">
+                    <div class="row g-0">
+
+                        <div
+                            class="testimonial-img  order-md-1 col-lg-6 col-md-6 col-12 text-lg-start text-md-center text-center">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane testi-img fade show active" id="pills-home" role="tabpanel">
+                                    <img oncontextmenu="return false;" id="testimonial-img"
+                                        src="./imgaes/Divy&karina_testimoinals-2.jpg" alt="Client Testimonial 1"
+                                        class="transition testimonial-img">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 col-md-6  order-md-0  testi-bg col-12 d-flex ">
+                            <div
+                                class="testi-content text-center d-flex justify-content-between  align-items-center flex-column">
+                                <!-- <h2 class="fs-1">Echoes of Excellence</h2> -->
+                                <h1 class="mt-lg-0 mt-md-4 mt-4">TESTIMONIALS</h1>
+                                <span class="d-block transition  mt-lg-0 mt-md-4 mt-4" id="testimonial-name">Divy &
+                                    Karina</span>
+                                <p id="testimonial-text" class="transition mt-lg-0 mt-md-4 mt-4">The work done by
+                                    Arihant Studio
+                                    on my
+                                    wedding is
+                                    exceptional. All the people are very friendly and it seemed like they were more
+                                    interested
+                                    than us to get good photos 😄 The main thing I liked about you all is speed - we
+                                    would get
+                                    high quality reels and photos same day/ next day of the event which is truly
+                                    appreciated ✨🙌
+                                </p>
+                                <ul class="nav nav-pills mb-3 text-center d-flex justify-content-center" id="pills-tab"
+                                    role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link mt-3" id="prev-testimonial" type="button">
+                                            <i class="fa-sharp-duotone fa-thin fa-arrow-left"></i>
+                                            <!-- <i class="fa-solid fa-arrow-right"></i> -->
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link mt-3" id="next-testimonial" type="button">
+                                            <i class="fa-sharp-duotone fa-thin fa-arrow-right"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- testimonials new-->
+
+            <!-- testimonials  new-->
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const testimonials = [
+                        {
+                            img: "./imgaes/Divy&karina_testimoinals-2.jpg",
+                            text: "“The work done by Arihant Studio on my wedding is exceptional. All the people are very friendly and it seemed like they were more interested than us to get good photos 😄 The main thing I liked about you all is speed - we would get high quality reels and photos same day/ next day of the event which is truly appreciated ✨🙌”",
+                            name: "Divy & Karina"
+                        },
+
+                        {
+                            img: "./imgaes/sparsh and vama testimonial.jpeg",
+                            text: "“Hyy Tirth Just wanted to thank you for the efforts u had taken!Really loved the outcomeIt was our first time and u made us feel so comfortable in front of the camera Had a great time filming itAnd everyone has appreciated your work as well they all loved it Thank you so much once again💓”",
+                            name: "Sparsh & Vama"
+                        },
+                        {
+                            img: "./imgaes/aagam-aangi-testimonials-2.jpg",
+                            text: "“Thank you so much for making our day so special! 🤍 We loved everything, and the attention to detail was simply amazing. 🔵 We’re beyond happy with your work, and I’m at a loss for words—it was surreal to witness everything. ❤️ Once again, thank you so much! 🥹”",
+                            name: "Aagam & Aangi"
+                        },
+
+                        // {
+                        //     img: "./imgaes/Dhruv-testimonials-1.jpg",
+                        //     text: "“A huge thank you to Tirth Bhai and the entire team for capturing the Dhaja moments so beautifully!Your dedication, creativity, and attention to detail made every shot truly special.The outcome is beyond amazing. Grateful for your hard work and talent! 📸✨”",
+                        //     name: "Sophia & Liam"
+                        // },
+                        // {
+                        //     img: "https://firstsight.design/palette/multi/wp-content/uploads/2020/12/Portfolio_2222@4x.jpg",
+                        //     text: "“Kaya Mason is just an awesome photographer and great person. Even if it’s your first photo session, don’t worry, Kaya will calm you down, give a lot of helpful tips and suggestions. She is so calm and attentive! My entire family was impressed by her and the photographs she took.”",
+                        //     name: "Sophia & Liam"
+                        // },
+                    ];
+
+                    let currentIndex = 0;
+                    const imgElement = document.getElementById("testimonial-img");
+                    const textElement = document.getElementById("testimonial-text");
+                    const nameElement = document.getElementById("testimonial-name");
+
+                    function updateTestimonial(index) {
+                        // Fade out
+                        imgElement.classList.add("fade-out");
+                        textElement.classList.add("fade-out");
+                        nameElement.classList.add("fade-out");
+
+                        setTimeout(() => {
+                            imgElement.src = testimonials[index].img;
+                            textElement.innerHTML = testimonials[index].text;
+                            nameElement.innerHTML = testimonials[index].name;
+
+                            // Fade in
+                            imgElement.classList.remove("fade-out");
+                            textElement.classList.remove("fade-out");
+                            nameElement.classList.remove("fade-out");
+                        }, 500); // Matches the CSS transition duration
+                    }
+
+                    document.getElementById("prev-testimonial").addEventListener("click", function () {
+                        currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+                        updateTestimonial(currentIndex);
+                    });
+
+                    document.getElementById("next-testimonial").addEventListener("click", function () {
+                        currentIndex = (currentIndex + 1) % testimonials.length;
+                        updateTestimonial(currentIndex);
+                    });
+                });
+            </script>
+            <!-- testimonials new-->
+
+            <!-- sparsh and vama -->
+            <section class="sparsh-vama">
+                <div class="video-wrapper">
+                    <video id="sparsh-vama-video" autoplay muted loop class="img-fluid">
+                        <source src="./videos/Save the date - Sparsh & Vama.mp4" type="video/mp4">
+                    </video>
+                    <div id="videoOverlay" class="video-overlay"></div>
+                </div>
+                <div id="muteToggle" class="mute-icon">
+                    <i class="fa-regular fa-play"></i> <!-- Only Unmute Icon -->
+                </div>
+            </section>
+            <!-- sparsh and vama -->
+
+            <script>
+                const video = document.getElementById("sparsh-vama-video");
+                const muteToggle = document.getElementById("muteToggle");
+                const videoOverlay = document.getElementById("videoOverlay");
+
+                // Function to check if the device is a phone (screen width < 768px)
+                function isPhone() {
+                    return window.innerWidth < 768;
+                }
+
+                // Function to check if fullscreen is active
+                function isFullscreen() {
+                    return document.fullscreenElement || document.webkitFullscreenElement;
+                }
+
+                // Function to update UI elements based on mute state
+                function updateUI() {
+                    if (video.muted) {
+                        muteToggle.style.opacity = "1"; // Show unmute icon
+                        muteToggle.style.pointerEvents = "auto"; // Enable clicking
+                        videoOverlay.style.opacity = "1"; // Show overlay
+                    } else {
+                        muteToggle.style.opacity = "0"; // Hide unmute icon
+                        muteToggle.style.pointerEvents = "none"; // Disable clicking
+                        videoOverlay.style.opacity = "0"; // Hide overlay
+                    }
+                }
+
+                // Function to enter fullscreen mode (only for mobile)
+                function enterFullscreen() {
+                    if (!isFullscreen()) {
+                        if (video.requestFullscreen) {
+                            video.requestFullscreen();
+                        } else if (video.webkitRequestFullscreen) {
+                            video.webkitRequestFullscreen();
+                        } else if (video.msRequestFullscreen) {
+                            video.msRequestFullscreen();
+                        }
+                    }
+                }
+
+                // Function to handle video and play icon click
+                function handleVideoClick() {
+                    if (isPhone()) {
+                        if (!isFullscreen()) {
+                            // First click → Unmute + Remove overlay
+                            video.muted = false;
+                            updateUI();
+
+                            // Enter fullscreen without needing to play the video again
+                            enterFullscreen();
+                        } else {
+                            // Already in fullscreen → Toggle mute/unmute
+                            video.muted = !video.muted;
+                            updateUI();
+                        }
+                    } else {
+                        // On PC, just toggle mute & remove overlay
+                        video.muted = !video.muted;
+                        updateUI();
+                    }
+                }
+
+                // Attach event listeners to video and play icon (mute button)
+                video.addEventListener("click", handleVideoClick);
+                muteToggle.addEventListener("click", (event) => {
+                    event.stopPropagation(); // Prevents video click event from firing
+                    handleVideoClick(); // Handle play icon click the same way as video click
+                });
+
+                // Listen for fullscreen change and mute the video when exiting
+                document.addEventListener("fullscreenchange", () => {
+                    if (!isFullscreen()) {
+                        video.muted = true;
+                        updateUI();
+                    }
+                });
+                document.addEventListener("webkitfullscreenchange", () => {
+                    if (!isFullscreen()) {
+                        video.muted = true;
+                        updateUI();
+                    }
+                });
+
+                // Ensure UI is correct on page load
+                updateUI();
+
+
+            </script>
+
+            <!-- bg -->
+            <!-- <section>
+                <div oncontextmenu="return false;" class="shooting">
+                    <div class="shooting-content text-center">
+                        <a href="#" id="playButton">PLAY</a>
+                    </div>
+                    <video id="videoPlayer" style="display: none;" controls>
+                        <source src="./videos/Save the date - Sparsh & Vama.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <button class="mt-3" id="closeButton" style="display: none;"><i
+                            class="fa-thin fa-xmark"></i></button>
+                </div>
+            </section> -->
+
+            <!-- bg script-->
+            <!-- <script>
+                document.getElementById('playButton').addEventListener('click', function (event) {
+                    event.preventDefault(); // Prevent the default action (i.e., navigation)
+                    var video = document.getElementById('videoPlayer');
+                    var closeButton = document.getElementById('closeButton');
+
+                    video.style.display = 'block';  // Show the video
+                    closeButton.style.display = 'block';  // Show the close button
+
+                    // Add transition effect for opacity
+                    setTimeout(function () {
+                        video.style.opacity = 1;  // Make the video visible with fade-in effect
+                        closeButton.style.opacity = 1;  // Make the close button visible with fade-in effect
+                    }, 10);
+
+                    video.play();  // Play the video
+                });
+
+                // Close the video when the close button is clicked
+                document.getElementById('closeButton').addEventListener('click', function () {
+                    var video = document.getElementById('videoPlayer');
+                    var closeButton = document.getElementById('closeButton');
+
+                    video.pause();  // Stop the video
+                    video.currentTime = 0;  // Reset the video to the start
+
+                    // Fade out effect
+                    video.style.opacity = 0;  // Fade the video out
+                    closeButton.style.opacity = 0;  // Fade the close button out
+
+                    // After fade out, hide the elements completely
+                    setTimeout(function () {
+                        video.style.display = 'none';  // Hide the video
+                        closeButton.style.display = 'none';  // Hide the close button
+                    }, 500);  // Delay to match the fade-out duration
+                });
+
+                // Hide video when the Escape key is pressed
+                document.addEventListener('keydown', function (event) {
+                    if (event.key === 'Escape') { // Check if the pressed key is the Escape key
+                        var video = document.getElementById('videoPlayer');
+                        var closeButton = document.getElementById('closeButton');
+
+                        video.pause();  // Stop the video
+                        video.currentTime = 0;  // Reset the video to the start
+
+                        // Fade out effect
+                        video.style.opacity = 0;  // Fade the video out
+                        closeButton.style.opacity = 0;  // Fade the close button out
+
+                        // After fade out, hide the elements completely
+                        setTimeout(function () {
+                            video.style.display = 'none';  // Hide the video
+                            closeButton.style.display = 'none';  // Hide the close button
+                        }, 500);  // Delay to match the fade-out duration
+                    }
+                });
+
+                // Hide video when it finishes playing
+                document.getElementById('videoPlayer').addEventListener('ended', function () {
+                    var video = document.getElementById('videoPlayer');
+                    var closeButton = document.getElementById('closeButton');
+
+                    // Fade out effect
+                    video.style.opacity = 0;  // Fade the video out
+                    closeButton.style.opacity = 0;  // Fade the close button out
+
+                    // After fade out, hide the elements completely
+                    setTimeout(function () {
+                        video.style.display = 'none';  // Hide the video
+                        closeButton.style.display = 'none';  // Hide the close button
+                    }, 500);  // Delay to match the fade-out duration
+                });
+
+
+
+
+            </script> -->
+            <!-- bg script-->
+
+            <!--you tube  -->
+            <section class="youtube">
+                <div class="container py-5">
+                    <div class="row g-2">
+                        <div class="col-lg-6 col-md-6 col-12" data-aos="fade-up">
+                            <iframe class="w-100" style="height: 280px;"
+                                src=" https://www.youtube.com/embed/9ooMxWl_CqY?si=q7AY1Le92NGJqh-s"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="  col-lg-6 col-md-6 col-12" data-aos="fade-up">
+                            <iframe class="w-100" style="height: 280px;"
+                                src="https://www.youtube.com/embed/PPs9i9HvK-A?si=eLpmRRQYsr0ejvEf"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12" data-aos="fade-up">
+                            <iframe class="w-100" style="height: 280px;" style="height: 300px;"
+                                src="https://www.youtube.com/embed/SLGPO6t_HZk?si=_-Hw3_erTH1Q4_Q4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12" data-aos="fade-up">
+                            <iframe class="w-100" style="height: 280px;"
+                                src="https://www.youtube.com/embed/01jQqnDk7Tc?si=d8wMzX6uRoH6nV8Y"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12" data-aos="fade-up">
+                            <iframe class="w-100" style="height: 280px;"
+                                src="https://www.youtube.com/embed/wYLCWh002fc?si=VgvIHQ4Bhb60OGlL"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12" data-aos="fade-up">
+                            <iframe class="w-100" style="height: 280px;"
+                                src="https://www.youtube.com/embed/w7FTfdUxpBA?si=6YRJUUoomF5OJi9Z"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <!-- <div class="col-lg-6 col-md-6 col-12" data-aos="fade-up">
+                    <iframe class="w-100" style="height: 280px;"
+                        src=" https://www.youtube.com/embed/9ooMxWl_CqY?si=q7AY1Le92NGJqh-s"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div> -->
+                        <!-- <div class="  col-lg-6 col-md-6 col-12" data-aos="fade-up">
+                    <iframe class="w-100" style="height: 280px;"
+                        src="https://www.youtube.com/embed/PPs9i9HvK-A?si=eLpmRRQYsr0ejvEf" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div> -->
+                    </div>
+                </div>
+            </section>
+            <!--you tube  -->
+
+            <!-- Reels -->
+            <section class="reels py-5">
+                <div class="container">
+                    <div class="reels-content">
+                        <div class="reels-content-heading text-center">
+                            <h1>Reels</h1>
+                        </div>
+                        <div class="row center g-1">
+                            <div class="col-lg-6 col-md-6 col-12 position-relative">
+                                <div class="video-container mt-3 p-3">
+                                    <video class="video w-100" muted>
+                                        <source src="./videos/Save the date-reel.mp4">
+                                    </video>
+                                    <button class="pause-btn"><i class="fa-light fa-play"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 position-relative">
+                                <div class="video-container p-3 mt-3">
+                                    <video class="video w-100" muted>
+                                        <source src="./videos/She said yes.mp4">
+                                    </video>
+                                    <button class="pause-btn"><i class="fa-light fa-play"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 position-relative">
+                                <div class="video-container mt-3 p-3">
+                                    <video class="video w-100" muted>
+                                        <source src="./videos/Reel-3.mp4">
+                                    </video>
+                                    <button class="pause-btn"><i class="fa-light fa-play"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 position-relative">
+                                <div class="video-container mt-3 p-3">
+                                    <video class="video w-100" muted>
+                                        <source src="./videos/Reel-6.mp4">
+                                    </video>
+                                    <button class="pause-btn"><i class="fa-light fa-play"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center">
+                    <a class="text-center follow-me mt-lg-5 mt-md-5 mt-5" target="_blank"
+                        href="https://www.instagram.com/arihantstudiosurat/reels/">Show More</a>
+                </div>
+
+            </section>
+
+            <!-- JavaScript -->
+
+            <script>
+
+                const videos = document.querySelectorAll('.video');
+                const pauseBtns = document.querySelectorAll('.pause-btn');
+
+                videos.forEach((video, index) => {
+                    const pauseBtn = pauseBtns[index];
+
+                    // Initially, show the "Paused" button
+                    pauseBtn.style.opacity = "1";
+
+                    // Function to toggle play/pause
+                    function toggleVideo(video, pauseBtn) {
+                        // Stop all other videos
+                        videos.forEach((vid, idx) => {
+                            if (vid !== video) {
+                                vid.pause();
+                                vid.muted = true;
+                                pauseBtns[idx].style.opacity = "1"; // Show pause button for other videos
+                            }
+                        });
+
+                        // Play/pause the clicked video
+                        if (video.paused) {
+                            video.play();
+                            video.muted = false;
+                            pauseBtn.style.opacity = "0"; // Hide button smoothly
+                        } else {
+                            video.pause();
+                            video.muted = true;
+                            pauseBtn.style.opacity = "1"; // Show button smoothly
+                        }
+                    }
+
+                    // Add event listeners for both video and button
+                    video.addEventListener('click', () => toggleVideo(video, pauseBtn));
+                    pauseBtn.addEventListener('click', (event) => {
+                        event.stopPropagation(); // Prevent event from bubbling up
+                        toggleVideo(video, pauseBtn);
+                    });
+
+                    // Restart video when it ends
+                    video.addEventListener('ended', () => {
+                        video.currentTime = 0;
+                        video.play(); // Automatically start playing again
+                    });
+                });
+
+            </script>
+
+            <script>
+                $(document).ready(function () {
+                    $('.center').slick({
+                        arrows: true,
+                        centerMode: true,
+                        centerPadding: '60px',
+                        slidesToShow: 3,
+
+                        prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
+                        nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
+                        responsive: [
+                            {
+                                breakpoint: 992,
+                                settings: {
+                                    arrows: true,
+                                    centerMode: true,
+                                    centerPadding: '10px', // Applied after 992px
+                                    slidesToShow: 2,
+
+                                }
+                            },
+                            {
+                                breakpoint: 768,
+                                settings: {
+                                    arrows: true,
+                                    centerMode: true,
+                                    centerPadding: '30px',
+                                    slidesToShow: 1,
+
+                                }
+                            },
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    arrows: false,
+                                    centerMode: true,
+                                    centerPadding: '40px',
+                                    slidesToShow: 1,
+                                    autoplay: true
+                                }
+                            }
+                        ]
+                    });
+                });
+
+            </script>
+            <!-- Reels -->
+
+            <!-- instagram  -->
+            <section oncontextmenu="return false;" class="instagram py-5 pt-5  text-center">
+                <h2 class="">Instagram</h2>
+                <div class="row">
+                    <div class="insta-img py-5 ">
+                        <div class="row d-flex g-0">
+                            <img data-aos="fade-up"
+                                onclick="window.location.href='https:www.instagram.com/reels/DFbnjnOzwwm/'"
+                                src="./imgaes/gallery-2.jpg" alt="" class="img-fluid">
+                            <img data-aos="fade-up" src="./imgaes/gallery-5.jpg" alt="" class="img-fluid">
+                            <img data-aos="fade-up" src="./imgaes/gallery-10.jpg" alt="" class="img-fluid">
+                            <img data-aos="fade-up" src="./imgaes/gallery-12.jpg" alt="" class="img-fluid">
+                            <img data-aos="fade-up" src="./imgaes/gallery-13.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <a class="text-center follow-me mt-lg-5 mt-md-5 mt-2" target="_blank"
+                    href="https://www.instagram.com/arihantstudiosurat/">follow us @arihantstudio</a>
+            </section>
+            <!-- instagram  -->
+
+            <!-- footer -->
+            <section class="footer">
+                <div class="container ">
+                    <div class="row p-lg-5 p-md-5 p-2">
+                        <div data-aos="fade-up" class="col-lg-4 col-md-4 col-12 d-flex justify-content-center">
+                            <div class="footer-content mt-lg-0 mt-md-5 mt-5 text-center">
+                                <p class="">Telephone</p>
+                                <a type="tel" id="number" class=" d-inline-block" href="tel:9081466622">+91
+                                    9824866622</a>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" class="col-lg-4 col-md-4 col-12 d-flex justify-content-center">
+                            <div class="footer-content mt-lg-0 mt-md-5 mt-5">
+                                <p class="text-center">Social</p>
+                                <ul class="d-flex mb-0 p-0 gap-3 text-center footer-social-links">
+                                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div data-aos="fade-up" class="col-lg-4 col-md-4 col-12 d-flex justify-content-center">
+                            <div class="footer-content mt-lg-0 mt-md-5 mt-5">
+                                <p class="text-center">Email</p>
+                                <a href="mailto:arihantstudiopal@gmail.com">arihantstudiopal@gmail.com</a>
+                            </div>
+
+                        </div>
+
+                        <div class="container d-flex justify-content-center py-5">
+                            <div class="row py-5">
+
+                                <div class="list d-flex">
+                                    <ul class="d-md-flex col-lg-6 col-md-6 col-6  ">
+                                        <li><a class="text-dark" href="">portfolio</a></li>
+                                        <li><a class="text-dark" href="">about</a></li>
+
+                                    </ul>
+                                    <ul class="d-md-flex col-lg-6 col-md-6 col-6">
+                                        <li class="padding-left"><a class="text-dark" href="">Gallery</a></li>
+                                        <li><a class="text-dark" href="">Contact</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="copyright text-center p-3">
+                            <span>© 2025, Arihant Studio. All rights reserved.</span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
+            <!-- footer -->
+
+            <!-- slick carousel js -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+                integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <!-- slick carousel js -->
+
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+            <!-- slick carousel js -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+                integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <!-- slick carousel js -->
+
+            <!-- aos js -->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <!-- aos js -->
+
+            <script>
+                $(document).ready(function () {
+                    $(".owl-carousel").owlCarousel({
+                        items: 1,
+                        loop: true,
+                        dots: false,
+                        lazyLoad: true,
+                        responsiveClass: true
+                    });
+                });
+
+                $('.mynav-next').click(function () {
+                    $(".owl-carousel").trigger('next.owl.carousel');
+                })
+                // Go to the previous item
+                $('.mynav-prev').click(function () {
+                    $(".owl-carousel").trigger('prev.owl.carousel');
+                })
+            </script>
+
+            <!-- aos script -->
+            <script>
+                AOS.init();
+            </script>
+            <!-- aos script -->
+
+            <!-- about us img script -->
+            <script>
+                window.addEventListener("scroll", function () {
+                    let scrollY = window.scrollY;
+                    let img = document.querySelector(".about .about-img img:last-child");
+
+                    if (img) {
+                        img.style.transform = `translateY(${scrollY * 0.1}px)`; // Adjust speed
+                    }
+                });
+            </script>
+            <!-- about us img script -->
+
+            <!-- navbar script -->
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    window.addEventListener("scroll", function () {
+                        let navbar = document.querySelector(".navbar-main");
+                        if (window.scrollY > 50) {
+                            navbar.classList.add("navbar-scroll");
+                        } else {
+                            navbar.classList.remove("navbar-scroll");
+
+                        }
+                        if (window.scrollY > 650) {
+                            navbar.classList.add("navbar-scroll-1");
+
+                        } else {
+                            navbar.classList.remove("navbar-scroll-1");
+
+                        }
+                        if (window.scrollY > 1330) {
+                            navbar.classList.add("navbar-scroll-2");
+
+                        } else {
+                            navbar.classList.remove("navbar-scroll-2");
+
+                        }
+                        if (window.scrollY > 4030) {
+                            navbar.classList.add("navbar-scroll-3");
+
+                        } else {
+                            navbar.classList.remove("navbar-scroll-3");
+
+                        }
+
+
+                    });
+                });
+            </script>
+            <!-- navbar script -->
+
+            <!-- back to top -->
+            <script>// back to top button
+                var btn = $('#button');
+
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > 300) {
+                        btn.addClass('show');
+                    } else {
+                        btn.removeClass('show');
+                    }
+                });
+                btn.on('click', function (e) {
+                    e.preventDefault();
+                    $('html, body').animate({ scrollTop: 0 }, '300');
+                });
+                // back to top button
+
+
+            </script>
+            <!-- back to top -->
+
+            <script src="script.js"></script>
+        </div>
+    </div>
+
+    <script>
+        gsap.registerPlugin(ScrollSmoother);
+
+        ScrollSmoother.create({
+            wrapper: "#smooth-wrapper",
+            content: "#smooth-content",
+            smooth: 2, // Adjust speed (higher = slower)
+            effects: true
+        });
+
+    </script>
+
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
+</html>
