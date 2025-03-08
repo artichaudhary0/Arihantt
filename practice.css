@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Italiana&family=Jost:ital,wght@0,100..900;1,100..900&family=Lavishly+Yours&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Gilda+Display&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Italiana&family=Jost:ital,wght@0,100..900;1,100..900&family=Lavishly+Yours&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: #f2efea;
+}
+
+::selection {
+  color: black;
+  background: #d6cdc0;
+}
+body,
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes loader {
+  0% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+ul li a {
+  list-style: none;
+}
+
+.about-content {
+  /* padding-left: 66px; */
+}
+
+.about-sub {
+  /* padding: 10px; */
+}
+
+.about .about-img img:first-child {
+  /* z-index: 1; */
+  max-width: 790px;
+  height:400px;
+  margin-right: -90px;
+}
+
+.about .about-img img:last-child {
+  align-self: center;
+  max-width: 300px;
+  margin-top: -70px;
+  z-index: -1;
+}
+
+.about-content h2 {
+  font-size: 65px;
+  letter-spacing: 0.5px;
+  line-height: 94px;
+  font-family: "Gilda Display";
+  font-weight: 400;
+}
+
+.about-content p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  color: #000000;
+  font-family: "Jost";
+}
+
+.about-content a {
+  font-size: 20px;
+  color: #988463;
+  font-family: "Gilda Display";
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 30px;
+}
+
+.about-content a i {
+  margin: 0 5px;
+  font-weight: 0;
+
+  transition: all ease-in-out 0.5s;
+}
+
+.about-content a:hover i {
+  margin-left: 10px;
+}
+
+
+
+
+
+
