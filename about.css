@@ -1,0 +1,588 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Italiana&family=Jost:ital,wght@0,100..900;1,100..900&family=Lavishly+Yours&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Gilda+Display&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Italiana&family=Jost:ital,wght@0,100..900;1,100..900&family=Lavishly+Yours&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Gilda+Display&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Italiana&family=Jost:ital,wght@0,100..900;1,100..900&family=Lavishly+Yours&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: #f2efea;
+}
+
+::selection {
+  color: black;
+  background: #d6cdc0;
+}
+body,
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.row {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-bar {
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  transform: translateX(100%);
+  transition: all ease 0.3s;
+}
+.menu-close-main {
+  position: absolute;
+  right: 44px;
+  top: 18px;
+}
+#menu-close-btn {
+  font-size: 30px;
+  color: black;
+}
+.transform {
+  transform: translateX(0%) !important;
+}
+.menu-bar-navigation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.menu-bar-navigation a {
+  color: black;
+  font-family: "Jost";
+  font-size: 30px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 20px;
+}
+.navigation a {
+  font-family: "Jost";
+  letter-spacing: 2px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 27px 0px;
+  transition: all ease 0.3s;
+}
+.navigation a:hover {
+  color: #988463 !important;
+}
+
+ul li a {
+  list-style: none;
+}
+#menu-btn {
+  display: flex !important;
+  margin-right: 40px !important;
+  justify-content: end !important;
+  font-size: 20px;
+  align-items: center;
+}
+/* Navbar Styles */
+.navbar-main {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999 !important;
+  background-color: white;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.navbar-main:hover,
+.navbar-scroll {
+  background-color: white !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* .navbar-main:hover,
+.navbar-scroll-1 {
+  background-color: rgb(245, 239, 239) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+.navbar-main:hover,
+.navbar-scroll-2 {
+  background-color: #e1d3bd !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-main:hover,
+.navbar-scroll-3{
+  background-color: #d1c3ad !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+} */
+.social-media a {
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+}
+.logo {
+  /* font-family: ; */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  /* margin-left: 40px; */
+  font-family: "Montserrat", sans-serif;
+}
+.menu-bar {
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  transform: translateX(100%);
+  transition: all ease 0.3s;
+}
+.menu-close-main {
+  position: absolute;
+  right: 44px;
+  top: 18px;
+}
+#menu-close-btn {
+  font-size: 30px;
+  color: black;
+}
+.transform {
+  transform: translateX(0%) !important;
+}
+.border-main {
+  /* border: 1px solid white;
+  padding: 20px 15px; 
+  top: 10%;
+  position: absolute;
+  z-index: 999;
+  opacity: 0.2;
+  width: 100%; */
+}
+.border-img {
+  /* position: absolute;
+  z-index:999;
+  border: 1px solid white;
+  width: 90%;
+  left: 5%;
+  height:80vh;
+  top: 15%; */
+}
+
+.social-links a {
+  color: white;
+  font-size: 20px;
+}
+.navigation a {
+  font-family: "Jost";
+  letter-spacing: 2px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 27px 0px;
+  transition: all ease 0.3s;
+}
+.navigation a:hover {
+  color: #988463 !important;
+}
+
+.story-main {
+  /* width: 40%; */
+  /* height: 300px; */
+  margin-top: 80px;
+}
+
+.story-content {
+  background-color: #ece4d8;
+  height: 320px;
+}
+.story-content h1 {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1em;
+  font-family: "Jost";
+}
+
+.italic-heading {
+  font-family: "Gilda Display";
+}
+/* 
+.footer {
+  background-color: #f2efea;
+  height: auto;
+}
+
+.footer-content p {
+  font-family: "Gilda Display";
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+}
+
+.footer-social-links a {
+  color: black !important;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.footer-content a {
+  color: #212120;
+}
+
+.footer-links a {
+  font-family: "Jost";
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.copyright span {
+  font-size: 12px;
+  font-family: "Jost";
+  /* color: #212120; */
+
+/* 
+.footer .list ul {
+  padding: 0px;
+}
+#number {
+  font-family: "Jost";
+
+  letter-spacing: 1px;
+}
+.list a:hover {
+  color: #988463 !important;
+}
+.footer .list ul li {
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-family: "Jost";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 16px;
+}
+
+.padding-left {
+  padding-right: 0px;
+}
+
+.copyright span {
+  font-size: 16px;
+} */
+*/ .love-main {
+  background-color: #996a4e;
+  height: auto;
+}
+
+.about-us-main {
+  position: relative;
+}
+.about-us-content-main {
+  background-image: url(https://images-pw.pixieset.com/elementfield/822729712/6def1fefe4985d5a014998ff3138e477-57e67d39.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 550px;
+}
+.about-us-content {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about-us-content h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-size: 30px;
+}
+.about-us-content span {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+.max-w-1200 {
+}
+
+.about-us-heading {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 0.1em;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 1.5em;
+}
+.about-para p {
+  font-family: "Lora", serif;
+  font-weight: 300;
+  line-height: 2.1em;
+}
+
+/* testimonials */
+/* .testimonails-main {
+  background-color: #eeeeee;
+  height: 600px;
+}
+
+.testimonials-img-1 {
+  background-image: url(https://images-pw.pixieset.com/elementfield/322763222/Srinivas__Vasantha-296-4cdcc849.jpeg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  margin-left: 130px;
+}
+.testimonials-img-1 {
+  background-image: url(https://images-pw.pixieset.com/elementfield/465193222/Swathi_Goutham-bf19458f.jpeg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  margin-left: 130px;
+}
+.testimonials-content p {
+  font-family: "Lora", serif;
+  font-size: 14px;
+  line-height: 2.1em;
+}
+.testimonials-content span{
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+.testimonials-content h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.375em;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 2px;
+} */
+/* testimonials */
+
+/* testimonials  */
+.testimonials {
+  /* height: 100px; */
+}
+.testi-bg {
+  background-color: #eeeeee;
+}
+.testi-content {
+  min-height: 250px;
+  transition: min-height 0.3s ease-in-out;
+  padding: 50px;
+  position: relative;
+}
+/* .line {
+  position: absolute;
+  border: 1px solid #707070;
+  height: 1px;
+  width: 5%;
+  transform: rotate(90deg);
+  top: 36%;
+} */
+/* .testi-content span::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  border: 1px solid #3b3b3b;
+  width: 5%;
+  transform: rotate(90deg);
+  left: 49%;
+  top: 35%;
+} */
+
+.testi-content h1 {
+  /* font-size: 80px; */
+  letter-spacing: 2px;
+  /* line-height: 94px; */
+  font-size: 14px;
+  font-family: "Gilda Display";
+  font-weight: 400;
+}
+.testi-content p {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 30px;
+  color: #000000;
+  /* padding: 10px 50px; */
+  font-family: "Gilda Display";
+}
+.testi-content span {
+  font-size: 25px;
+  color: #3b3b3b;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  letter-spacing: 4px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+#testimonial-img {
+  height: 550px;
+  position: relative;
+}
+.testimonials img {
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  object-position: 86% 53%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.testi-content i {
+  color: #707070 !important;
+  font-size: 30px;
+  /* z-index:99 ; */
+  /* margin-left: 20px; */
+}
+.testi-content ul {
+  /* margin-left:40%; */
+}
+.transition {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+/* instagram  */
+.instagram {
+  background-color: #f2efea;
+}
+
+.instagram h2 {
+  font-size: 67px;
+  font-weight: 400;
+  line-height: 94px;
+  letter-spacing: 0.005px;
+  font-family: "Gilda Display";
+}
+
+.insta-img img {
+  /* height: 500px; */
+  width: 20%;
+  cursor: pointer;
+}
+
+.instagram a {
+  color: #988463;
+  border: 1px solid #988463;
+  font-family: "jost";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 14px 35px;
+  display: inline-block;
+  /* margin-bottom: 0; */
+}
+
+.follow-me {
+  transition: all ease 0.2s;
+}
+
+.follow-me:hover {
+  background-color: #988463;
+  color: white;
+}
+/* instagram */
+
+/* footer  */
+.footer {
+  background-color: #f2efea;
+  height: auto;
+}
+
+.footer-content p {
+  font-family: "Gilda Display";
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+}
+
+.footer-social-links a {
+  color: black !important;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.footer-content a {
+  color: #212120;
+}
+
+.footer-links a {
+  font-family: "Jost";
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.footer-links a:hover {
+}
+
+.copyright span {
+  font-size: 12px;
+  font-family: "Jost";
+  /* color: #212120; */
+}
+
+.footer .list ul {
+  padding: 0px;
+}
+#number {
+  font-family: "Jost";
+
+  letter-spacing: 1px;
+}
+.list a:hover {
+  color: #988463 !important;
+}
+.footer .list ul li {
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-family: "Jost";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 16px;
+}
+
+.padding-left {
+  padding-right: 0px;
+}
+
+.copyright span {
+  font-size: 16px;
+}
+/* footer */
+
+#list-icon{}
